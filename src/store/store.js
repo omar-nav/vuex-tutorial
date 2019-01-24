@@ -11,7 +11,13 @@ const getters = {
   fetchCount: state => state.count
 }
 
+const mutations = {
+  increment: state => state.count++,
+  decrement: state => state.count--
+}
+
 export const store = new Vuex.Store({
   state,
-  getters
+  getters,
+  mutations
 })
